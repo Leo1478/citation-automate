@@ -1,6 +1,6 @@
 ###
 #Leo Zeng
-#may 28 2019
+#may 28 210019
 #citation automate
 #a program to automate using citation machine
 #this webcite seems to load inconsistant, im putting 3 seconds wait time for each action,
@@ -47,10 +47,10 @@ for lineNum in f1:
         url.send_keys(link)
     except:
         pass
-    driver.implicitly_wait(0)
+    driver.implicitly_wait(100)
 
     #search webcite
-    """
+
     try:
         search = driver.find_element_by_class_name("search-button")
         search.click()
@@ -61,8 +61,8 @@ for lineNum in f1:
         search.click()
     except:
         pass
-    driver.implicitly_wait(0)
-    """
+    driver.implicitly_wait(100)
+
 
     #select
     try:
@@ -75,7 +75,7 @@ for lineNum in f1:
         select.click()
     except:
         pass
-    driver.implicitly_wait(0)
+    driver.implicitly_wait(100)
 
     #final step
     try:
@@ -88,7 +88,7 @@ for lineNum in f1:
         finalStep.click()
     except:
         pass
-    driver.implicitly_wait(0)
+    driver.implicitly_wait(100)
 
     #create citation
     try:
@@ -101,7 +101,7 @@ for lineNum in f1:
         create.click()
     except:
         pass
-    driver.implicitly_wait(0)
+    driver.implicitly_wait(100)
 
 
     #create another citation
@@ -115,7 +115,7 @@ for lineNum in f1:
         another.click()
     except:
         pass
-    driver.implicitly_wait(0)
+    driver.implicitly_wait(100)
 
 #your biblography has 2 citations in it.
 try:
